@@ -163,15 +163,12 @@ stdin and its stdout becomes the `PATTERN` paragraph. If it's absent, times
 out, or fails, hindsight falls back to the deterministic template -- the
 report is never blocked on it.
 
-## Works with loop-rat
+## Running it on a schedule
 
-hindsight runs as a weekly, report-only loop in `.claude/loops/hindsight/`
-for [loop-rat](https://github.com/mrbuzzoni/loop-rat): the deterministic
-report is the verify step, and the model's only job in the whole loop is
-writing the `PATTERN` paragraph from metrics hindsight already computed.
-There is no trading action anywhere in the loop -- it produces a report,
-not an order. hindsight is fully standalone and needs neither loop-rat nor
-any model to run.
+hindsight is read-only and safe to run on a timer. The RPC cache in
+`.hindsight/cache/` means a repeat run only fetches blocks it has not seen,
+so a weekly report costs almost nothing after the first pass. `--json`
+emits the machine-readable form, and `--card` writes the shareable HTML.
 
 ## Limitations
 
