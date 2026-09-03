@@ -1,0 +1,9 @@
+{
+  "chainId": 1,
+  "address": "0x00000000000000000000000000000000dec0de01",
+  "fromBlock": 1,
+  "toBlock": 20,
+  "sinceLabel": "2026-01-01",
+  "untilLabel": "2026-09-03",
+  "untilTimestamp": 1788436800
+}

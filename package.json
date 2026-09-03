@@ -1,0 +1,39 @@
+{
+  "name": "hindsight",
+  "version": "0.1.0",
+  "description": "A read-only counterfactual replay engine for Solana wallets.",
+  "type": "module",
+  "bin": {
+    "hindsight": "dist/src/cli.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "data",
+    "fixtures/demo"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test dist/tests/*.test.js",
+    "pretest": "npm run build"
+  },
+  "license": "MIT",
+  "author": "defi0x1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/defi0x1/hindsight"
+  },
+  "keywords": [
+    "solana",
+    "wallet",
+    "pnl",
+    "replay",
+    "cli"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.6.0"
+  }
+}
