@@ -227,6 +227,15 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for scope boundaries (zero
 runtime dependencies, no per-DEX decoders, no number that isn't traced to
 on-chain arithmetic) before proposing a change.
 
+## Related
+
+Sibling tools built on the same shape: a deterministic oracle does the scoring,
+and a model is only ever allowed to write the prose.
+
+- [mole](https://github.com/defi0x1/mole) -- plants plausible bugs in your code and reports which ones your tests failed to catch
+- [burrow](https://github.com/defi0x1/burrow) -- gives any command a disposable git worktree, hard limits, and a receipt
+- [drift-graph](https://github.com/defi0x1/drift-graph) -- snapshots your import graph and shows which architectural boundaries got crossed
+
 ## License
 
 MIT, see [`LICENSE`](LICENSE).
